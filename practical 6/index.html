@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Wonders</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            background-image: url("https://i.pinimg.com/736x/6e/6a/7b/6e6a7b9e9f025980f203863490d56e96.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(102, 187, 106, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: cursive;
+            background-image: url("https://i.pinimg.com/originals/59/0e/0f/590e0f2c162e970900134a55a30fd60c.jpg");
+            background-size: cover;
+        }
+
+        header h1 {
+            color: #fff9c4;
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: rgb(149, 232, 245);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* Search Bar Styling */
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #66bb6a;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #1b5e20;
+        }
+
+        /* Media Section */
+        img, audio, video {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            height: auto;
+        }
+
+        footer {
+            background-color: #66bb6a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .search-bar input {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .search-bar button {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nature's Wonders</h1>
+        <p>Explore the sights, sounds, and beauty of nature</p>
+    </header>
+
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for nature content...">
+            <button onclick="alert('Search functionality coming soon!')">Search</button>
+        </div>
+
+        <!-- Image Section -->
+        <h2>Scenic Image: Mountains and Forest</h2>
+        <picture>
+            <source srcset="mountains.webp" type="image/webp">
+            <img src="https://i.pinimg.com/736x/00/b8/15/00b8156e18021ae827f186d30eb69869.jpg" alt="A scenic view of mountains and forests">
+        </picture>
+
+        <!-- Audio Section -->
+        <h2>Sounds of Nature</h2>
+        <audio controls>
+            <source src="birds-chirping.mp3" type="audio/mpeg">
+            <source src="birds-chirping.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Listen to the soothing sounds of birds chirping in a serene forest.</p>
+
+        <!-- Video Section -->
+        <h2>Nature in Motion</h2>
+        <iframe width="360" height="315" src="https://www.youtube.com/embed/CHSnz0bCaUk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Watch this mesmerizing video of a cascading waterfall surrounded by greenery.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nature's Wonders. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
